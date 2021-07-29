@@ -159,7 +159,7 @@
     <section class="section section-connection">
       <div class="container">
         <div class="row">
-          <div class="col-6 d-flex flex-column justify-content-center p-5">
+          <div class="col-5 d-flex flex-column justify-content-start py-5 right-shrink">
             <div class="title-box d-flex flex-column align-items-start">
               <h3 class="title my-3 text-light">Связь с нами</h3>
               <span class="subtitle my-4 text-light">У вас остались вопросы? Напишите нам - мы ответим в ближайшее
@@ -174,24 +174,24 @@
                   class="item-text mx-2">order@buhone.ru</span></span>
             </div>
           </div>
-          <div class="col-6  p-5">
+          <div class="col-6 offset-1 py-5">
             <form action="#" class="forms d-flex flex-wrap justify-content-end">
-              <div class="form-grid">
-                <div class="form-item inp1 d-flex flex-column m-3">
-                  <label for="name" class="text-light py-2 text-label">Имя</label>
-                  <input class="connection__field" type="text" name="name" id="name" placeholder="Иван">
+              <div class="forms-grid">
+                <div class="forms__item inp1 d-flex flex-column">
+                  <label for="name" class="text-light py-2 forms__item-label">Имя</label>
+                  <input class="forms__item-input" type="text" name="name" id="name" placeholder="Иван">
                 </div>
-                <div class="form-item inp2 d-flex flex-column m-3">
-                  <label for="surname" class="text-light py-2 text-label">Фамилия</label>
-                  <input class="connection__field" type="text" name="surname" id="surname" placeholder="Иванов">
+                <div class="forms__item inp2 d-flex flex-column">
+                  <label for="surname" class="text-light py-2 forms__item-label">Фамилия</label>
+                  <input class="forms__item-input" type="text" name="surname" id="surname" placeholder="Иванов">
                 </div>
-                <div class="form-item d-flex area flex-column m-3">
-                  <label for="area" class="text-light py-2 text-label">Сообщение</label>
-                  <textarea class="connection__field " name="area" id="area" cols="48" rows="4"
+                <div class="forms__item d-flex area flex-column ">
+                  <label for="area" class="text-light py-2 forms__item-label">Сообщение</label>
+                  <textarea class="forms__item-input" name="area" id="area" cols="40" rows="5"
                     placeholder="Ваше сообщение"></textarea>
                 </div>
                 <div class="btn-grid text-end">
-                  <button type="button" class="btn mybtn m-3" id="btnSendData">Отправить сообщение</button>
+                  <button type="button" class="btn button " id="btnSendData">Отправить сообщение</button>
                 </div>
               </div>
             </form>
@@ -201,7 +201,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container p-3">
+    <div class="container py-3">
       <div class="row">
         <div class="col-6 text-start">
           <span class="">2019 (с) Все права защищены. БухОне.ру</span>

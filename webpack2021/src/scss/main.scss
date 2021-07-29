@@ -1,5 +1,15 @@
 
-
+.button{
+    width: 45%;
+    padding: 15px;
+    border: none;
+    border-radius: 0;
+    background-color: $colorBlue;
+    color: $colorLight;
+    font-family: $fontMenu;
+    font-weight: $fontNormal;
+    font-size: $fontS;
+}
 .container{
     padding: 100px 0;
 }
@@ -35,22 +45,24 @@
 .title-box{
     .suptitle{
         font-family: $fontMenu;
-        font-size: 24px;
-        font-weight: 900;
-        color: rgba(189, 189, 189, 1);
+        font-size: $fontM;
+        font-weight:$fontBolder;
+        color: $colorGray;
     }
     .title{
         font-family: $fontFamily;
-        font-size: 48px;
-        font-weight: 900;
+        font-size: $fontXL;
+        font-weight: $fontBolder;
         &--mod{
-            color: rgb(0, 95, 163);
+            color: $colorBlue;
         }
     }
     .subtitle{
         font-family: $fontMenu;
-        font-size: 18px;
-        font-weight: 300;
+        font-size: $fontS;
+        font-weight: $fontLight;
+        line-height: 1.6em;
+        letter-spacing: 0.08em;
     }
 
 }
@@ -71,17 +83,6 @@
             font-family: $fontFamily;
             font-size: $fontXL;
             font-weight: $fontBold;
-        }
-        .button{
-            width: 45%;
-            padding: 15px;
-            border: none;
-            border-radius: 0;
-            background-color: $colorBlue;
-            color: $colorLight;
-            font-family: $fontMenu;
-            font-weight: $fontNormal;
-            font-size: $fontS;
         }
     }
 }
@@ -167,7 +168,7 @@
     background: url(../images/content/Rectangle.jpg);
 
     .contacts{
-        color: white;
+        color: $colorLight;
         &-item{
             img{
                 display: inline;
@@ -180,26 +181,59 @@
             font-weight: $fontLight;
         }
     }
-
-    .form-input{
-        background: none;
-        border: none;
-        border-bottom: 1px solid rgb(194, 194, 194);
-        color: rgb(194, 194, 194);
-        
-        &::-webkit-input-placeholder {
-            color: rgba(230, 230, 230, 0.64);
-        } 
-        .text-label{
-            font-size: 16px;
-            font-weight: 400;
-        }
-
-
+    .inp1{
+        grid-area: i1;
     }
-    .error{
-        background-color: rgba(194, 194, 194, 0.239);
-        box-shadow: inset 0 0 15px 0 red;
+    .inp2{
+        grid-area: i2;
+    }
+    .area{
+        grid-area: a;
+    }
+    .btn-grid{
+        grid-area: b;
+    }
+    .forms-grid{
+        width: 100%;
+        display: grid;
+        grid-template: 
+            "i1 i2" 1fr
+            "a a" 2fr
+            "b b" 1fr / 1fr 1fr ;
+            gap: 30px;
+        .forms__item{
+            &-label{
+                font-family: $fontMenu;
+                font-size: 16px;
+                font-weight: $fontNormal;
+            }
+            &-input{
+                padding: 5px;
+                background: none !important;
+                border: none;
+                border-bottom: 1px solid $colorGray;
+                font-family: $fontMenu;
+                font-size: 21px;
+                font-weight: $fontLight;
+                color: $colorGray;
+                
+                &::-webkit-input-placeholder {
+                    color: $colorGray;
+                } 
+                &::-moz-input-placeholder{
+                    color: $colorGray;
+                }
+            }
+        }
     }
 }
-.footer{}
+.right-shrink{
+    padding-right: 25px;
+}
+    // .error{
+    //     background-color: rgba(194, 194, 194, 0.239);
+    //     box-shadow: inset 0 0 15px 0 red;
+    // }
+
+
+// .footer{}

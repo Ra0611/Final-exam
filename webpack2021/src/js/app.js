@@ -1,7 +1,7 @@
 import '../scss/app.scss';
-import 'bootstrap'
+import 'bootstrap';
 
-
+import './main';
 
 
 

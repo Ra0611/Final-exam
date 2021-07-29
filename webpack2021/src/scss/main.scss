@@ -1,0 +1,205 @@
+
+
+.container{
+    padding: 100px 0;
+}
+.header{
+    .sup-menu{
+        margin-left: 1em;
+        &__item{
+            margin-left: 3em;
+            .item-text{
+                font-family: $fontMenu;
+                font-weight: $fontNormal;
+                font-size: $fontSupText;
+            }
+        }
+    }
+    .logotype{
+        font-family: $fontFamily;
+        font-size: $fontL;
+        font-weight: $fontBolder;
+        color: $colorBlue;
+    }
+    .nav-link--nav{
+        font-family: $fontMenu;
+        text-transform: uppercase;
+        font-size: $fontXS;
+        font-weight: $fontBold;
+        color: $colorDark;
+    }
+    .nav-item--shift{
+        margin-left: 3.5em;
+    }
+}
+.title-box{
+    .suptitle{
+        font-family: $fontMenu;
+        font-size: 24px;
+        font-weight: 900;
+        color: rgba(189, 189, 189, 1);
+    }
+    .title{
+        font-family: $fontFamily;
+        font-size: 48px;
+        font-weight: 900;
+        &--mod{
+            color: rgb(0, 95, 163);
+        }
+    }
+    .subtitle{
+        font-family: $fontMenu;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+}
+.section-home{
+    position: relative;
+    .slider{
+        width: 100%;
+    }
+    .title-box--home{
+        max-width: 590px;
+        height: 40%;
+        position: absolute;
+        left: 15%;
+        top: 50%;
+        transform: translateY(-50%);
+        &__text{
+            color: $colorLight;
+            font-family: $fontFamily;
+            font-size: $fontXL;
+            font-weight: $fontBold;
+        }
+        .button{
+            width: 45%;
+            padding: 15px;
+            border: none;
+            border-radius: 0;
+            background-color: $colorBlue;
+            color: $colorLight;
+            font-family: $fontMenu;
+            font-weight: $fontNormal;
+            font-size: $fontS;
+        }
+    }
+}
+.section-services{
+    .service{
+        margin-top: 100px;
+        // height: 750px;
+        display: grid;
+        grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+        gap: 30px;
+        &__item{
+            max-width: 350px;
+            max-height: 360px;
+            background-color: rgba(0, 95, 163, 0.497);
+            &-text{
+                font-family: $fontMenu;
+                font-size: $fontM;
+                font-weight: $fontBolder; 
+                color: $colorLight;
+            }
+        }
+    }
+}
+.section-company{
+    .section__text{
+        padding: 0 10px 20px 0;
+        .text{
+            margin-top: 50px;
+            font-family: $fontMenu;
+            font-size: $fontS;
+            font-weight: $fontLight;
+            color: $colorDark;
+            line-height: 1.5em;
+            letter-spacing: 0.08em;
+        }
+    }
+    .section-grid{
+        padding: 40px;
+        display: grid;
+        grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+        gap: 20px;
+        &__item{
+            padding: 30px;
+            background-color: $colorLightGray;
+            .counter{
+                font-family: $fontMenu;
+                font-size: 55px;
+                font-weight: $fontBolder;
+                color: $colorDark;
+            }
+            &-text{
+                margin: 10% 0px;
+                width: 60%;
+                font-family: $fontMenu;
+                font-size: $fontXS;
+                font-weight: $fontBold;
+                .label{
+                    color: $colorDark;
+                }
+            }
+            a{
+                margin: 0;
+                text-decoration: underline;
+            }
+            &:hover{
+                background-color: $colorBlue;
+                color: $colorLight;
+                
+                a, .counter, .label{
+                    color: $colorLight;
+                }
+            }
+        }
+    }
+}
+.section-clients{
+
+}
+.section-reviews{
+
+}
+.section-connection{
+    background: url(../images/content/Rectangle.jpg);
+
+    .contacts{
+        color: white;
+        &-item{
+            img{
+                display: inline;
+            }
+        }
+        .item-text{
+            margin: 10px;
+            font-family: $fontMenu;
+            font-size: 21px;
+            font-weight: $fontLight;
+        }
+    }
+
+    .form-input{
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgb(194, 194, 194);
+        color: rgb(194, 194, 194);
+        
+        &::-webkit-input-placeholder {
+            color: rgba(230, 230, 230, 0.64);
+        } 
+        .text-label{
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+
+    }
+    .error{
+        background-color: rgba(194, 194, 194, 0.239);
+        box-shadow: inset 0 0 15px 0 red;
+    }
+}
+.footer{}

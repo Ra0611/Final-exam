@@ -175,23 +175,26 @@
             </div>
           </div>
           <div class="col-6 offset-1 py-5">
-            <form action="#" class="forms d-flex flex-wrap justify-content-end">
+            <form action="#" class="forms d-flex flex-wrap justify-content-end" id="form">
               <div class="forms-grid">
                 <div class="forms__item inp1 d-flex flex-column">
                   <label for="name" class="text-light py-2 forms__item-label">Имя</label>
-                  <input class="forms__item-input" type="text" name="name" id="name" placeholder="Иван">
+                  <input class="forms__item-input" type="text" name="name" placeholder="Иван">
+                  <div class="error"></div>
                 </div>
                 <div class="forms__item inp2 d-flex flex-column">
                   <label for="surname" class="text-light py-2 forms__item-label">Фамилия</label>
-                  <input class="forms__item-input" type="text" name="surname" id="surname" placeholder="Иванов">
+                  <input class="forms__item-input" type="text" name="surname" placeholder="Иванов">
+                  <div class="error"></div>
                 </div>
                 <div class="forms__item d-flex area flex-column ">
                   <label for="area" class="text-light py-2 forms__item-label">Сообщение</label>
                   <textarea class="forms__item-input" name="area" id="area" cols="40" rows="5"
                     placeholder="Ваше сообщение"></textarea>
+                  <div class="error"></div>
                 </div>
                 <div class="btn-grid text-end">
-                  <button type="button" class="btn button " id="btnSendData">Отправить сообщение</button>
+                  <button type="submit" class="btn button " id="btnSendData">Отправить сообщение</button>
                 </div>
               </div>
             </form>

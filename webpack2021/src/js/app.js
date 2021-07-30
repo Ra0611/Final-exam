@@ -71,6 +71,7 @@ import './main';
 
 
 
+
 // function searchInsert() {
 //     const value = input.value
 //     let result = resData.data.filter((el) => el.title.startsWith(value))

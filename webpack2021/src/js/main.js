@@ -1,42 +1,98 @@
+// const count = document.querySelector('.counter')
+// const click = document.querySelector('.more-data')
 
-document.addEventListener('DOMContentLoaded', function () {
+// let clicks = 0;
+// function onClick() {
+//     clicks += 1;
+//     count.innerHTML = clicks;
+// };
+
+document.addEventListener('DOMContentLoaded', () => {
+    'use strict'
+
+    let validate = false
+
+    const area = document.getElementById('area')
     const form = document.getElementById('form')
-    const submit = document.getElementById('btnSendData')
-    form.addEventListener('submit', formSend)
 
-    async function formSend(e) {
-        e.preventDefault()
 
-        let error = formValidate(form)
-        if (error === 0) {
-
-        } else {
-            alert('Заполните обязательные поля')
-        }
+    const submit = () => {
+        alert('Сообщение отправлено!')
     }
 
-    function formValidate(form) {
-        let error = 0
-        let formReq = document.querySelectorAll('.req')
-
-
-        for (let i = 0; i < formReq.length; i++) {
-            const input = formReq[i]
-            formRemoveError(input)
-
-            if (input.value === '') {
-                formAddError(input)
-                error++
-                console.log(input)
+    const validFunc = (elem) => {
+        if (elem.name === 'name') {
+            if (elem.value.length > 1 && elem.value.length < 12) {
+                elem.style.boxShadow = ''
+                elem.nextElementSibling.textContent = ''
+                validate = true
+            } else {
+                elem.style.boxShadow = 'inset 0 0 2px 2px red'
+                elem.nextElementSibling.textContent = 'Текст должен содержать от 2 до 12 символов'
+                validate = false
             }
         }
-        return error
+
+        if (elem.name === 'surname') {
+            if (elem.value.length > 1 && elem.value.length < 12) {
+                elem.style.boxShadow = ''
+                elem.nextElementSibling.textContent = ''
+                validate = true
+            } else {
+                elem.style.boxShadow = 'inset 0 0 2px 2px red'
+                elem.nextElementSibling.textContent = 'Текст должен содержать от 2 до 12 символов'
+                validate = false
+            }
+        }
+
+        if (elem.name === 'area') {
+            if (elem.value.length >= 15) {
+                elem.style.boxShadow = ''
+                elem.nextElementSibling.textContent = ''
+                validate = true
+            } else {
+                elem.style.boxShadow = 'inset 0 0 2px 2px red'
+                elem.nextElementSibling.textContent = 'Текст должен содержать более 20 символов'
+                validate = false
+            }
+        }
+
     }
 
-    function formAddError(input) {
-        input.classList.add('error')
+    for (let elem of form.elements) {
+        if (elem.tagName !== 'BUTTON') {
+            elem.addEventListener('blur', () => { validFunc(elem) })
+
+        }
     }
-    function formRemoveError(input) {
-        input.classList.remove('error')
-    }
+
+    form.addEventListener('submit', (even) => {
+        even.preventDefault()
+
+        for (let elem of form.elements) {
+            if (elem.tagName !== 'BUTTON') {
+                if (elem.value === '') {
+                    elem.nextElementSibling.textContent = 'Поле не заполнено!'
+                    elem.style.boxShadow = 'inset 0 0 2px 2px red'
+                    validate = false
+                } else if (area.value.length < 14) {
+                    area.style.boxShadow = 'inset 0 0 2px 2px red'
+                    area.nextElementSibling.textContent = 'Текст должен содержать более 20 символов'
+                    validate = false
+                } else {
+                    elem.nextElementSibling.textContent = ''
+                    elem.style.boxShadow = ''
+                    validate = true
+                }
+            }
+        }
+        if (validate) {
+            submit()
+            form.reset()
+        } else {
+            alert('Заполните пустые поля!')
+        }
+
+    })
 })
+

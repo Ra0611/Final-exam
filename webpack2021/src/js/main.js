@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const area = document.getElementById('area')
     const form = document.getElementById('form')
 
-
     const submit = () => {
         alert('Сообщение отправлено!')
     }
@@ -94,5 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     })
+
 })
 

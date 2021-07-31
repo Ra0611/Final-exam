@@ -1,6 +1,7 @@
 import '../scss/app.scss';
 import 'bootstrap';
 
+import './data'
 import './main';
 
 

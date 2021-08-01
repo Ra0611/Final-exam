@@ -1,0 +1,98 @@
+
+@media screen and (max-width: 1600px){
+
+    .service{
+        margin: auto;
+        width: 85%;
+        grid-template: repeat(3, 1fr)/repeat(2, 1fr) !important;
+        &__item{
+            width: 450px !important;
+            height: 460px !important;
+        }
+    }
+    .title-box{
+        &--services{
+            .suptitle{
+                text-align: center;
+            }
+            .title{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .title-box{
+        .title{
+            font-size: $fontL;
+        }
+    }
+    .button{
+        padding: 10px;
+    }
+    .service{
+        width: 80%;
+        &__item{
+            width: 450px !important;
+            height: 460px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    .button{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .title-box{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        .title{
+            text-align: center;
+        }
+    }
+    .slider{
+        .slick-arrow{
+            display: none !important;
+        }
+        .slick-dots{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .title-box{
+        .title{
+            font-size: $fontM;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .button{
+        width: 60%;
+    }
+    .slider{
+        .slick-dots{
+            top: 10%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    
+    .button{
+        width: 80%;
+    }
+}

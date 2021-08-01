@@ -16,7 +16,6 @@ window.onload = async function () {
             serviceItem[i].style.backgroundImage = 'url(' + result[i].image + ')'
             serviceItem[i].style.backgroundSize = result[i].size
             serviceItem[i].style.backgroundPosition = result[i].position
-            console.log(serviceItem[i])
         }
 
 

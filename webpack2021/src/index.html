@@ -12,12 +12,13 @@
 
 <body>
   <!-- Navigatiom -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container p-0">
+  <!-- <header class="header">
+    <div class="container p-0">
+      <nav class="nav my-nav d-flex justify-content-end">
+
         <div class="row w-100 flex-column">
           <div class="col">
-            <div class="sup-menu d-flex justify-content-end">
+            <div class="sup-menu d-none d-lg-flex justify-content-end">
               <div class="sup-menu__item d-flex">
                 <a href="tel:+8 (111) 222-33-44"><img src="images/content/icon-phone.svg"></a><span
                   class="item-text mx-2">8 (111) 222-33-44</span>
@@ -41,231 +42,302 @@
               <img src="images/content/logo.svg" alt="" width="40" height="40" class="d-inline-block align-text-top">
               <span class="logotype mx-4">BuhOne</span>
             </span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item nav-item--shift">
-                  <a class="nav-link nav-link--nav" aria-current="page" href="#">главная</a>
-                </li>
-                <li class="nav-item nav-item--shift ">
-                  <a class="nav-link nav-link--nav" href="#">услуги</a>
-                </li>
-                <li class="nav-item nav-item--shift ">
-                  <a class="nav-link nav-link--nav" href="#">кейсы</a>
-                </li>
-                <li class="nav-item nav-item--shift ">
-                  <a class="nav-link nav-link--nav" href="#">о компании</a>
-                </li>
-                <li class="nav-item nav-item--shift ">
-                  <a class="nav-link nav-link--nav" href="#">контакты</a>
-                </li>
-              </ul>
+
+            <div class="nav__burger">
+              <span class="icon-burger"></span>
             </div>
+            <ul class="nav__list">
+              <li class="nav-item">
+                <a class="nav-link nav-link--nav" aria-current="page" href="">главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link--nav" href="#services">услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link--nav" href="#">кейсы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link--nav" href="#">о компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link--nav" href="#">контакты</a>
+              </li>
+            </ul>
+
           </div>
         </div>
-      </div>
-    </nav>
+
+      </nav>
+    </div>
   </header>
-  <main class="main">
-    <!-- Home -->
-    <section class="section section-home p-0">
-      <div class="slider">
-        <div class="slider__item"><img src="images/content/bacgrounds/city4.jpg" alt="photo city">
-          <div class="slider__item--shadow"></div>
-        </div>
-        <div class="slider__item"><img src="images/content/bacgrounds/city5.jpg" alt="photo city">
-          <div class="slider__item--shadow"></div>
-        </div>
-        <div class="slider__item"><img src="images/content/bacgrounds/city6.jpg" alt="photo city">
-          <div class="slider__item--shadow"></div>
-        </div>
-        <div class="slider__item"><img src="images/content/bacgrounds/city7.jpg" alt="photo city">
-          <div class="slider__item--shadow"></div>
-        </div>
+  <main class="main"> -->
+  <!-- Home -->
+  <section class="section section-home p-0">
+    <div class="slider">
+      <div class="slider__item"><img class="img-home" src="images/content/bacgrounds/city4.jpg" alt="photo city">
+        <div class="slider__item--shadow"></div>
       </div>
-      <div class="title-box title-box--home d-flex flex-column justify-content-between">
-        <h3 class="title text-light lh-base">Бухгалтерские услуги в Mариуполе</h3>
-        <button type="button" class="btn button">Наша презентация</button>
+      <div class="slider__item"><img class="img-home" src="images/content/bacgrounds/city5.jpg" alt="photo city">
+        <div class="slider__item--shadow"></div>
       </div>
-    </section>
+      <div class="slider__item"><img class="img-home" src="images/content/bacgrounds/city6.jpg" alt="photo city">
+        <div class="slider__item--shadow"></div>
+      </div>
+      <div class="slider__item"><img class="img-home" src="images/content/bacgrounds/city7.jpg" alt="photo city">
+        <div class="slider__item--shadow"></div>
+      </div>
+    </div>
+    <div class="title-box title-box--mod d-flex flex-column justify-content-between">
+      <h3 class="title text-light lh-base">Бухгалтерские услуги в Mариуполе</h3>
+      <button type="button" class="btn button">Наша презентация</button>
+    </div>
+  </section>
 
-    <!-- Services -->
-    <section class="section section-services bg-light">
-      <div class="container">
-        <div class="title-box d-flex flex-column justify-content-between">
-          <span class="suptitle mb-4">Наши услуги</span>
-          <h3 class="title">Мы специализируемся</h3>
+  <!-- Services -->
+  <section class="section section-services" id="services">
+    <div class="container">
+      <div class="title-box d-flex flex-column justify-content-between title-box--services">
+        <span class="suptitle mb-4">Наши услуги</span>
+        <h3 class="title">Мы специализируемся</h3>
+      </div>
+      <div class="service">
+        <div class="service__item service__item-1">
+          <a class="wrapper-item  d-flex align-items-end p-4" href="#">
+            <span class="service__item-text">Бухгалтерское обслуживание</span>
+          </a>
         </div>
-        <div class="service">
-          <div class="service__item service__item-1">
-            <a class="wrapper-item  d-flex align-items-end p-4" href="#">
-              <span class="service__item-text">Бухгалтерское обслуживание</span>
-            </a>
-          </div>
-          <div class="service__item service__item-2">
-            <a class="wrapper-item  d-flex align-items-end p-4" href="#">
-              <span class="service__item-text">Бухгалтерское обслуживание</span>
-            </a>
-          </div>
-          <div class="service__item service__item-3">
-            <a class="wrapper-item  d-flex align-items-end p-4" href="#">
-              <span class="service__item-text">Бухгалтерское обслуживание</span>
-            </a>
-          </div>
-          <div class="service__item service__item-4">
-            <a class="wrapper-item  d-flex align-items-end p-4" href="#">
-              <span class="service__item-text">Бухгалтерское обслуживание</span>
-            </a>
-          </div>
-          <div class="service__item service__item-5">
-            <a class="wrapper-item  d-flex align-items-end p-4" href="#">
-              <span class="service__item-text">Бухгалтерское обслуживание</span>
-            </a>
-          </div>
-          <div class="service__item service__item-6">
-            <a class="wrapper-item  d-flex align-items-end p-4" href="#">
-              <span class="service__item-text">Бухгалтерское обслуживание</span>
-            </a>
-          </div>
+        <div class="service__item service__item-2">
+          <a class="wrapper-item  d-flex align-items-end p-4" href="#">
+            <span class="service__item-text">Бухгалтерское обслуживание</span>
+          </a>
+        </div>
+        <div class="service__item service__item-3">
+          <a class="wrapper-item  d-flex align-items-end p-4" href="#">
+            <span class="service__item-text">Бухгалтерское обслуживание</span>
+          </a>
+        </div>
+        <div class="service__item service__item-4">
+          <a class="wrapper-item  d-flex align-items-end p-4" href="#">
+            <span class="service__item-text">Бухгалтерское обслуживание</span>
+          </a>
+        </div>
+        <div class="service__item service__item-5">
+          <a class="wrapper-item  d-flex align-items-end p-4" href="#">
+            <span class="service__item-text">Бухгалтерское обслуживание</span>
+          </a>
+        </div>
+        <div class="service__item service__item-6">
+          <a class="wrapper-item  d-flex align-items-end p-4" href="#">
+            <span class="service__item-text">Бухгалтерское обслуживание</span>
+          </a>
         </div>
       </div>
-      </div>
-    </section>
+    </div>
+    </div>
+  </section>
 
-    <!-- About company -->
-    <section class="section section-company">
-      <div class="container">
-        <div class="row">
-          <div class="col-5 pb-5 d-flex flex-column justify-content-between">
-            <div class="title-box d-flex flex-column justify-content-between">
-              <span class="suptitle mb-4">О нас</span>
-              <h3 class="title">Компания <br><span class="title--mod">ИвановПром</span></h3>
-            </div>
-            <div class="section__text">
-              <p class="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
-                печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-                образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в
-                электронный дизайн.</p>
-            </div>
+  <!-- About company -->
+  <section class="section section-company">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 pb-4 px-0 d-flex flex-column justify-content-between">
+          <div class="title-box d-flex flex-column justify-content-between">
+            <span class="suptitle mb-4">О нас</span>
+            <h3 class="title">Компания <br><span class="title--mod">ИвановПром</span></h3>
           </div>
-          <div class="col-6 offset-1 p-0 section-grid">
-            <div class="section-grid__item d-flex flex-column justify-content-between">
-              <span class="counter">90</span>
-              <p class="label section-grid__item-text">Завершено крупных сделок</p>
-              <a href="" class="section-grid__item-text">Все кейсы</a>
-            </div>
-            <div class="section-grid__item d-flex flex-column justify-content-between">
-              <span class="counter">90</span>
-              <p class="label section-grid__item-text">Завершено крупных сделок</p>
-              <a href="" class="section-grid__item-text">Все кейсы</a>
-            </div>
-            <div class="section-grid__item d-flex flex-column justify-content-between">
-              <span class="counter">90</span>
-              <p class="label section-grid__item-text">Завершено крупных сделок</p>
-              <a href="" class="section-grid__item-text">Все кейсы</a>
-            </div>
-            <div class="section-grid__item d-flex flex-column justify-content-between">
-              <span class="counter">90</span>
-              <p class="label section-grid__item-text">Завершено крупных сделок</p>
-              <a href="" class="section-grid__item-text">Все кейсы</a>
-            </div>
+          <div class="section__text px-0">
+            <p class="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+              является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
+              печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+              образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в
+              электронный дизайн.</p>
+          </div>
+        </div>
+        <div class="col-6 offset-1 p-0 section-grid">
+          <div class="section-grid__item d-flex flex-column justify-content-between">
+            <span class="counter">90</span>
+            <p class="label section-grid__item-text">Завершено крупных сделок</p>
+            <a href="" class="section-grid__item-text">Все кейсы</a>
+          </div>
+          <div class="section-grid__item d-flex flex-column justify-content-between">
+            <span class="counter">90</span>
+            <p class="label section-grid__item-text">Завершено крупных сделок</p>
+            <a href="" class="section-grid__item-text">Все кейсы</a>
+          </div>
+          <div class="section-grid__item d-flex flex-column justify-content-between">
+            <span class="counter">90</span>
+            <p class="label section-grid__item-text">Завершено крупных сделок</p>
+            <a href="" class="section-grid__item-text">Все кейсы</a>
+          </div>
+          <div class="section-grid__item d-flex flex-column justify-content-between">
+            <span class="counter">90</span>
+            <p class="label section-grid__item-text">Завершено крупных сделок</p>
+            <a href="" class="section-grid__item-text">Все кейсы</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Our clients -->
-    <section class="section section-clients bg-light">
-      <div class="slider">
-        <div class="slider__item"><img src="images/content/bacgrounds/city4.jpg" alt="photo city">
-          <div class="slider__item--shadow"></div>
-        </div>
-        <div class="slider__item"><img src="images/content/bacgrounds/city5.jpg" alt="photo city">
-          <div class="slider__item--shadow"></div>
-        </div>
-        <div class="slider__item"><img src="images/content/bacgrounds/city6.jpg" alt="photo city">
-          <div class="slider__item--shadow"></div>
-        </div>
-        <div class="slider__item"><img src="images/content/bacgrounds/city7.jpg" alt="photo city">
-          <div class="slider__item--shadow"></div>
-        </div>
+  <!-- Our clients -->
+  <section class="section section-clients">
+    <div class="section-clients__wrapper">
+      <div class="slider slider-lengthy" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+        <div class="slider__item"><img src="images/content/clients/MSoft.png" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/MSoft.png" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/MSoft.png" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/MSoft.png" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/apple.jpg" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/apple.jpg" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/apple.jpg" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/apple.jpg" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/google.jpg" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/google.jpg" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/google.jpg" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/google.jpg" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/tesla.png" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/tesla.png" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/tesla.png" alt="photo city"></div>
+        <div class="slider__item"><img src="images/content/clients/tesla.png" alt="photo city"></div>
       </div>
-      <div class="title-box title-box--home d-flex flex-column justify-content-between">
+      <div class="title-box title-box--mod title-box--mod-shift d-flex flex-column ">
         <span class="suptitle mb-4">Наши клиенты</span>
         <h3 class="title">С нами работают</h3>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Feedbacks of clients -->
-    <section class="section section-reviews">
-      <div class="container">
+  <!-- Feedbacks of clients -->
+  <section class="section section-reviews">
+    <div class="section-reviews__wrapper">
+      <div class="slider slider-lengthy" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
 
-        <div class="title-box d-flex flex-column justify-content-between">
-          <span class="suptitle mb-4">Отзывы</span>
-          <h3 class="title">Ваши благодарности</h3>
-        </div>
-      </div>
-    </section>
-    <!-- Send message block -->
-    <section class="section section-connection">
-      <div class="container">
-        <div class="row">
-          <div class="col-5 d-flex flex-column justify-content-start py-5 right-shrink">
-            <div class="title-box d-flex flex-column align-items-start">
-              <h3 class="title my-3 text-light">Связь с нами</h3>
-              <span class="subtitle my-4 text-light">У вас остались вопросы? Напишите нам - мы ответим в ближайшее
-                время!</span>
-            </div>
-            <div class="contacts w-100 my-4 d-flex justify-content-between text-light">
-              <span class="contacts-item d-flex align-items-center"><a href="tel:+8 (111) 222-33-44"><img
-                    src="images/content/icon-phoneWhite.svg"></a><span class="item-text mx-2">8 (111)
-                  222-33-44</span></span>
-              <span class="contacts-item px-4 d-flex align-items-center"><a href="http://" target="_blank"
-                  rel="noopener noreferrer"><img src="images/content/icon-mailWhite.svg"></a><span
-                  class="item-text mx-2">order@buhone.ru</span></span>
-            </div>
-          </div>
-          <div class="col-6 offset-1 py-5">
-            <form action="#" class="forms d-flex flex-wrap justify-content-end" id="form">
-              <div class="forms-grid">
-                <div class="forms__item inp1 d-flex flex-column">
-                  <label for="name" class="text-light py-2 forms__item-label">Имя</label>
-                  <input class="forms__item-input" type="text" name="name" placeholder="Иван">
-                  <div class="error"></div>
-                </div>
-                <div class="forms__item inp2 d-flex flex-column">
-                  <label for="surname" class="text-light py-2 forms__item-label">Фамилия</label>
-                  <input class="forms__item-input" type="text" name="surname" placeholder="Иванов">
-                  <div class="error"></div>
-                </div>
-                <div class="forms__item d-flex area flex-column ">
-                  <label for="area" class="text-light py-2 forms__item-label">Сообщение</label>
-                  <textarea class="forms__item-input" name="area" id="area" cols="40" rows="5"
-                    placeholder="Ваше сообщение"></textarea>
-                  <div class="error"></div>
-                </div>
-                <div class="btn-grid text-end">
-                  <button type="submit" class="btn button " id="btnSendData">Отправить сообщение</button>
-                </div>
+        <div class="slider__item">
+          <div class="review d-flex flex-column align-items-center">
+            <span class="review__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+              безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+              распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </span>
+            <div class="review__data d-flex align-items-center justify-content-start pt-3">
+              <img src="./images/content/reviews/review4.png" alt="photo">
+              <div class="data-users px-4">
+                <h6 class="data-users__title">Екатерина Иванова</h6>
+                <span class="data-users__subtitle">Директор ООО “Раз-два”</span>
               </div>
-            </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="review d-flex flex-column align-items-center">
+            <span class="review__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+              безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+              распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </span>
+            <div class="review__data d-flex align-items-center justify-content-start pt-3">
+              <img src="./images/content/reviews/review3.png" alt="photo">
+              <div class="data-users px-4">
+                <h6 class="data-users__title">Иван Петров</h6>
+                <span class="data-users__subtitle">Директор ОАО “Тандем”</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="review d-flex flex-column align-items-center">
+            <span class="review__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+              безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+              распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </span>
+            <div class="review__data d-flex align-items-center justify-content-start pt-3">
+              <img src="./images/content/reviews/review2.png" alt="photo">
+              <div class="data-users px-4">
+                <h6 class="data-users__title">Елена Федорова</h6>
+                <span class="data-users__subtitle">Финансовый директор ООО “Рога и копыта”</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="review d-flex flex-column align-items-center">
+            <span class="review__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+              безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+              распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </span>
+            <div class="review__data d-flex align-items-center justify-content-start pt-3">
+              <img src="./images/content/reviews/review1.png" alt="photo">
+              <div class="data-users px-4">
+                <h6 class="data-users__title">John Smit</h6>
+                <span class="data-users__subtitle">Менеджер ТОВ "Альтрон"</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="title-box title-box--mod title-box--mod-shift d-flex flex-column ">
+        <span class="suptitle mb-4">Отзывы</span>
+        <h3 class="title">Ваши благодарности</h3>
+      </div>
+    </div>
+  </section>
+  <!-- Send message block -->
+  <section class="section section-connection">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 d-flex flex-column justify-content-start px-0 py-5">
+          <div class="title-box d-flex flex-column align-items-start">
+            <h3 class="title text-light mb-4">Связь с нами</h3>
+            <span class="subtitle my-4 text-light">У вас остались вопросы? Напишите нам - мы ответим в ближайшее
+              время!</span>
+          </div>
+          <div class="contacts w-100 my-4 d-flex justify-content-between text-light">
+            <span class="contacts-item d-flex align-items-center"><a href="tel:+8 (111) 222-33-44"><img
+                  src="images/content/icon-phoneWhite.svg"></a><span class="item-text mx-2">8 (111)
+                222-33-44</span></span>
+            <span class="contacts-item d-flex align-items-center"><a href="http://" target="_blank"
+                rel="noopener noreferrer"><img src="images/content/icon-mailWhite.svg"></a><span
+                class="item-text mx-2">order@buhone.ru</span></span>
+          </div>
+        </div>
+        <div class="col-6 offset-1 py-5">
+          <form action="#" class="forms d-flex flex-wrap justify-content-end" id="form">
+            <div class="forms-grid">
+              <div class="forms__item inp1 d-flex flex-column">
+                <label for="name" class="text-light py-2 forms__item-label">Имя</label>
+                <input class="forms__item-input" type="text" name="name" placeholder="Иван">
+                <div class="error"></div>
+              </div>
+              <div class="forms__item inp2 d-flex flex-column">
+                <label for="surname" class="text-light py-2 forms__item-label">Фамилия</label>
+                <input class="forms__item-input" type="text" name="surname" placeholder="Иванов">
+                <div class="error"></div>
+              </div>
+              <div class="forms__item d-flex area flex-column ">
+                <label for="area" class="text-light py-2 forms__item-label">Сообщение</label>
+                <textarea class="forms__item-input" name="area" id="area" cols="40" rows="5"
+                  placeholder="Ваше сообщение"></textarea>
+                <div class="error"></div>
+              </div>
+              <div class="btn-grid text-end">
+                <button type="submit" class="btn button " id="btnSendData">Отправить сообщение</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   </main>
   <footer class="footer">
     <div class="container py-3">
       <div class="row">
         <div class="col-6 text-start">
-          <span class="">2019 (с) Все права защищены. БухОне.ру</span>
+          <span class="footer-text">2019 (с) Все права защищены. БухОне.ру</span>
         </div>
         <div class="col-6 text-end">
-          <span>Разработано: BuhOne</span>
+          <span class="footer-text">Разработано: BuhOne</span>
         </div>
       </div>
     </div>

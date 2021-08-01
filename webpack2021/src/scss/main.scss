@@ -1,94 +1,15 @@
 
 
-.button{
-    width: 45%;
-    padding: 15px;
-    border: none;
-    border-radius: 0;
-    background-color: $colorBlue;
-    color: $colorLight;
-    font-family: $fontMenu;
-    font-weight: $fontNormal;
-    font-size: $fontS;
-}
-.container{
-    max-width: 1110px;
-    padding: 100px 0;
-}
-.header{
-    .sup-menu{
-        margin-left: 1em;
-        &__item{
-            margin-left: 3em;
-            .item-text{
-                font-family: $fontMenu;
-                font-weight: $fontNormal;
-                font-size: $fontSupText;
-            }
-        }
-    }
-    .logotype{
-        font-family: $fontFamily;
-        font-size: $fontL;
-        font-weight: $fontBolder;
-        color: $colorBlue;
-    }
-    .nav-link--nav{
-        font-family: $fontMenu;
-        text-transform: uppercase;
-        font-size: $fontXS;
-        font-weight: $fontBold;
-        color: $colorDark;
-    }
-    .nav-item--shift{
-        margin-left: 3.5em;
-    }
-}
-.title-box{
-    .suptitle{
-        font-family: $fontMenu;
-        font-size: $fontM;
-        font-weight:$fontBolder;
-        color: $colorGray;
-    }
-    .title{
-        font-family: $fontFamily;
-        font-size: $fontXL;
-        font-weight: $fontBolder;
-        &--mod{
-            color: $colorBlue;
-        }
-    }
-    .subtitle{
-        font-family: $fontMenu;
-        font-size: $fontS;
-        font-weight: $fontLight;
-        line-height: 1.6em;
-        letter-spacing: 0.08em;
-    }
-    &--home{
-        max-width: 590px;
-        height: 40%;
-        position: absolute;
-        left: 15%;
-        top: 50%;
-        transform: translateY(-50%);
-        &__text{
-            color: $colorLight;
-            font-family: $fontFamily;
-            font-size: $fontXL;
-            font-weight: $fontBold;
-        }
-    }
-}
+
 .section-home{
     max-height: 670px;
+    min-height: 300px;
     position: relative;
 }
 .section-services{
+    background-color: rgba(235, 235, 235, 1);
     .service{
         margin-top: 100px;
-        // height: 750px;
         display: grid;
         grid-template: repeat(2, 1fr)/repeat(3, 1fr);
         gap: 30px;
@@ -131,12 +52,15 @@
         }
     }
     .section-grid{
+        margin-left: 85px;
         padding: 40px;
         display: grid;
         grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-        gap: 20px;
+        gap: 30px;
         &__item{
-            padding: 30px;
+            width: 265px;
+            height: 265px;
+            padding: 25px;
             background-color: $colorLightGray;
             .counter{
                 font-family: $fontMenu;
@@ -171,13 +95,47 @@
 }
 .section-clients{
     position: relative;
+    &__wrapper{
+        padding: 100px 0px;
+        background-color: rgba(235, 235, 235, 1);
+    }
 }
 .section-reviews{
-
+    &__wrapper{
+        padding: 100px 0px;
+        position: relative;
+    }
+    .review{
+        padding: 1.5em 4em;
+        background-color: $colorLightGray;
+        &__text{
+            font-family: $fontMenu;
+            font-size: $fontS;
+            font-weight: $fontLight;
+            line-height: 25px;
+            // width: 90%;
+        }
+        &__data{
+            width: 100%;
+            .data-users{
+                &__title{
+                    font-family: $fontMenu;
+                    font-size: $fontS;
+                    font-weight: $fontBolder;
+                }
+                &__subtitle{
+                    font-family: $fontMenu;
+                    font-size: $fontXS;
+                    font-weight: $fontNormal;
+                }
+            }
+        }
+    }
 }
 .section-connection{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)) url(../images/content/bacgrounds/city7.jpg);
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/content/bacgrounds/city6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     .contacts{
         color: $colorLight;
         &-item{
@@ -250,127 +208,4 @@
         }
     }
 }
-.error{
-    height: 10px;
-    font-family: $fontMenu;
-    font-size: $fontSupText;
-    color: $colorError;
-}
-.right-shrink{
-    padding-right: 25px;
-}
 
-
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
-.slick-list {
-    overflow: hidden;
-}
-/* Лента слайдов */
-.slick-track{
-    display: flex;
-}
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
-
-.slider {
-    position: relative;
-    height: 100%;
-    &__item{
-        position: relative;
-        &--shadow{
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.6);
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-    }
-    .slick-arrow{
-        width: 60px;
-        height: 60px;
-        position: absolute; 
-        top: 77%;
-        z-index: 10;
-        font-size: 0;
-        border: none;
-    }
-    .slick-prev{
-        background: url(../images/design/left-arrow.png) center no-repeat;
-        background-color: rgba(255, 255, 255, 0.2);
-        left: 72.75%;
-        &:hover{
-            background-color: rgba(255, 255, 255, 0.4);
-        }
-    }
-    .slick-next{
-        right: 21%;
-        background: url(../images/design/right-arrow.png) center no-repeat;
-        background-color: rgba(255, 235, 205, 0.17);
-        &:hover{
-            background-color: rgba(255, 235, 205, 0.4);
-        }
-    }
-    .slick-dots{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 80%;
-        left: 13.7%;
-        & li{
-            list-style: none;
-            padding: 0px 20px;
-                /* Элемент точки */
-            & button{
-                font-size: 0;
-                padding: 0;
-                width: 10px;
-                height: 10px;
-                border: none;
-                border-radius: 50%;
-                background-color: rgba(255, 255, 255, 0.4);
-                &:hover{
-                    background-color: rgba(255, 255, 255, 1);
-                }
-            }
-            &.slick-active button{
-                background-color: rgba(255, 255, 255, 1);
-            }
-        }    
-    }    
-
-
-}
-
-
-// .footer{}

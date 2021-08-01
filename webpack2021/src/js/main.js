@@ -18,9 +18,17 @@ $(function () {
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        speed: 700,
+        easing: 'easy',
     })
 })
+
+$(function () {
+    $('.nav__burger').click(function (event) {
+        $('.nav__burger,.nav__list').toggleClass('active');
+    });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict'
@@ -108,6 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     })
+
+
 
 })
 

@@ -1,0 +1,67 @@
+
+.section{
+    max-width: 1920px;
+}
+.button{
+    width: 45%;
+    padding: 15px;
+    border: none;
+    border-radius: 0;
+    background-color: $colorBlue;
+    color: $colorLight;
+    font-family: $fontMenu;
+    font-weight: $fontNormal;
+    font-size: $fontS;
+}
+.container{
+    max-width: 1110px;
+    padding: 100px 0;
+}
+
+.title-box{
+    .suptitle{
+        font-family: $fontMenu;
+        font-size: $fontM;
+        font-weight:$fontBolder;
+        color: $colorGray;
+    }
+    .title{
+        font-family: $fontFamily;
+        font-size: $fontXL;
+        font-weight: $fontBolder;
+        &--mod{
+            color: $colorBlue;
+        }
+    }
+    .subtitle{
+        font-family: $fontMenu;
+        font-size: $fontS;
+        font-weight: $fontLight;
+        line-height: 1.6em;
+        letter-spacing: 0.08em;
+    }
+    &--mod{
+        max-width: 590px;
+        height: 40%;
+        position: absolute;
+        left: 22%;
+        top: 50%;
+        transform: translateY(-50%);
+        &__text{
+            color: $colorLight;
+            font-family: $fontFamily;
+            font-size: $fontXL;
+            font-weight: $fontBold;
+        }
+        &-shift{
+            left: 20%;
+            top: 32%;
+        }
+    }
+}
+.error{
+    height: 10px;
+    font-family: $fontMenu;
+    font-size: $fontSupText;
+    color: $colorError;
+}

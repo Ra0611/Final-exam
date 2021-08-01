@@ -4,6 +4,8 @@ import 'bootstrap';
 import './data'
 import './main';
 
+import 'slick-carousel'
+
 
 
 

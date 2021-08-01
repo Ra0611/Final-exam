@@ -7,6 +7,17 @@
 //     count.innerHTML = clicks;
 // };
 
+let $ = require('jquery')
+
+window.jQuery = $
+window.$ = window.jQuery
+
+$(function () {
+    $('.slider').slick({
+
+    })
+})
+
 document.addEventListener('DOMContentLoaded', () => {
     'use strict'
 

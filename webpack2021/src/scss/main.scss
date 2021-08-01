@@ -66,12 +66,7 @@
         line-height: 1.6em;
         letter-spacing: 0.08em;
     }
-
-}
-.section-home{
-    max-height: 670px;
-    position: relative;
-    .title-box--home{
+    &--home{
         max-width: 590px;
         height: 40%;
         position: absolute;
@@ -85,6 +80,10 @@
             font-weight: $fontBold;
         }
     }
+}
+.section-home{
+    max-height: 670px;
+    position: relative;
 }
 .section-services{
     .service{
@@ -171,13 +170,13 @@
     }
 }
 .section-clients{
-
+    position: relative;
 }
 .section-reviews{
 
 }
 .section-connection{
-    background: url(../images/content/Rectangle.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)) url(../images/content/bacgrounds/city7.jpg);
 
     .contacts{
         color: $colorLight;
@@ -305,6 +304,17 @@
 .slider {
     position: relative;
     height: 100%;
+    &__item{
+        position: relative;
+        &--shadow{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.6);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
     .slick-arrow{
         width: 60px;
         height: 60px;
@@ -340,8 +350,6 @@
         & li{
             list-style: none;
             padding: 0px 20px;
-        /* Активная точка */
-            &.slick-active{}
                 /* Элемент точки */
             & button{
                 font-size: 0;
@@ -354,6 +362,9 @@
                 &:hover{
                     background-color: rgba(255, 255, 255, 1);
                 }
+            }
+            &.slick-active button{
+                background-color: rgba(255, 255, 255, 1);
             }
         }    
     }    

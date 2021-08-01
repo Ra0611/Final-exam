@@ -14,7 +14,7 @@ window.$ = window.jQuery
 
 $(function () {
     $('.slider').slick({
-
+        dots: true
     })
 })
 

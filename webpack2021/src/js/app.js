@@ -1,10 +1,14 @@
 import '../scss/app.scss';
+
+// import bootstrap from 'bootstrap'
 import 'bootstrap';
 
-import './data'
+import './data';
 import './main';
+import './slider';
 
-import 'slick-carousel'
+import 'slick-carousel';
+import './burger';
 
 
 

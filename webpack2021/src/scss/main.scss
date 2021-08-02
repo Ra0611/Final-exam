@@ -5,6 +5,7 @@
     max-height: 670px;
     min-height: 300px;
     position: relative;
+    background-color: rgba(235, 235, 235, 1);
 }
 .section-services{
     background-color: rgba(235, 235, 235, 1);
@@ -14,6 +15,7 @@
         grid-template: repeat(2, 1fr)/repeat(3, 1fr);
         gap: 30px;
         &__item{
+            margin: auto;
             width: 350px;
             height: 360px;
             position: relative;
@@ -101,9 +103,11 @@
     }
 }
 .section-reviews{
+    position: relative;
     &__wrapper{
         padding: 100px 0px;
-        position: relative;
+        margin-bottom: 100px;
+        height: 630px;
     }
     .review{
         padding: 1.5em 4em;
@@ -113,7 +117,6 @@
             font-size: $fontS;
             font-weight: $fontLight;
             line-height: 25px;
-            // width: 90%;
         }
         &__data{
             width: 100%;
@@ -133,9 +136,27 @@
     }
 }
 .section-connection{
+    max-width: 1920px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/content/bacgrounds/city6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    .title-box--form{
+        .title{
+            font-family: $fontFamily;
+            font-size: $fontXL;
+            font-weight: $fontBolder;
+            &--mod{
+                color: $colorBlue;
+            }
+        }
+        .subtitle{
+            font-family: $fontMenu;
+            font-size: $fontS;
+            font-weight: $fontLight;
+            line-height: 1.6em;
+            letter-spacing: 0.08em;
+        }
+    }
     .contacts{
         color: $colorLight;
         &-item{
@@ -181,7 +202,7 @@
                 padding: 5px;
                 background: none ;
                 border: none;
-                border-bottom: 1px solid $colorGray;
+                border-bottom: 2px solid $colorGray;
                 font-family: $fontMenu;
                 font-size: 21px;
                 font-weight: $fontLight;

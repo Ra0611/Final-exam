@@ -1,13 +1,14 @@
 
+
 @media screen and (max-width: 1600px){
 
     .service{
         margin: auto;
-        width: 85%;
-        grid-template: repeat(3, 1fr)/repeat(2, 1fr) !important;
+        width: 100%;
+        
         &__item{
-            width: 450px !important;
-            height: 460px !important;
+            width: 340px !important;
+            height: 350px !important;
         }
     }
     .title-box{
@@ -20,10 +21,18 @@
             }
         }
     }
+    .review{
+        width: 90wh;
+    }
 }
 
 @media screen and (max-width: 1400px){
     .title-box{
+        &--mod-shift{
+            top: 7%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
         .title{
             font-size: $fontL;
         }
@@ -31,11 +40,12 @@
     .button{
         padding: 10px;
     }
-    .service{
-        width: 80%;
-        &__item{
-            width: 450px !important;
-            height: 460px !important;
+    .slider-group{
+        .slick-prev{
+            right: 10%;
+        }
+        .slick-next{
+            right: 10%;
         }
     }
 }
@@ -44,6 +54,37 @@
 
     .button{
         padding: 5px;
+    }
+    .slider-group{
+        .slick-prev{
+            right: 25%;
+        }
+        .slick-next{
+            right: 25%;
+        }
+    }
+    .slider-lengthy{
+        width: 850px;
+    }
+    .service{
+        width: 70%;
+        grid-template: repeat(3, 1fr)/repeat(2, 1fr) !important;
+        &__item{
+            width: 350px !important;
+            height: 360px !important;
+        }
+    }
+    .title-box{
+        &--services{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 3%;
+        }
+    }
+    .section-grid__item{
+        width: 340px !important;
+        height: 340px !important;
     }
 }
 
@@ -56,6 +97,20 @@
         align-items: center;
         .title{
             text-align: center;
+            // margin: 35px;
+        }
+        .suptitle{
+            margin: 0;
+        }
+        &--mod{
+            top: 30%;
+        }
+        &--services{
+            top: 7%;
+        }
+        &--company{
+            position: absolute;
+            top: 7%;
         }
     }
     .slider{
@@ -67,12 +122,68 @@
             transform: translateX(-50%);
         }
     }
+    .slider-lengthy{
+        width: 700px;
+    }
+    .service{
+        width: 65%;
+        &__item{
+            width: 255px !important;
+            height: 260px !important;
+            &-text{
+                font-size: $fontS !important;
+            }
+        }
+    }
+    .section-grid{
+        width: 70%;
+        &__item{
+            width: 300px !important;
+            height: 300px !important;
+        }
+    }
+    .title-box--form{
+        position: static !important;
+        .title{
+            margin: 0;
+        }
+    }
 }
 
 @media screen and (max-width:800px){
     .title-box{
         .title{
             font-size: $fontM;
+        }
+        &--services{
+            top: 10%;
+        }
+    }
+    // .section-reviews{
+    //     .title-box{
+    //         .title{
+    //             font-size: $fontL !important;
+    //         }
+    //         .suptitle{
+    //             font-size: $fontM;
+    //         }
+    //     }
+    // }
+    .service{
+        width: 60%;
+        &__item{
+            width: 180px !important;
+            height: 185px !important;
+            &-text{
+                font-size: $fontXS !important;
+            }
+        }
+    }
+    .section-grid{
+        width: 65%;
+        &__item{
+            width: 250px !important;
+            height: 250px !important;
         }
     }
 }
@@ -82,10 +193,59 @@
     .button{
         width: 60%;
     }
-    .slider{
-        .slick-dots{
-            top: 10%;
+    .section-grid{
+        width: 65%;
+        &__item{
+            width: 200px !important;
+            height: 200px !important;
         }
+    }
+    .slider-group{
+        width: 100%;
+        .slider__item{
+            width: 600px;
+        }
+        .slick-list{
+            width: 100%;
+            
+            overflow: hidden;
+        }
+    }
+    .section-reviews{
+        .review{
+            padding: 10px 5px !important;
+            &__text{
+                font-size: $fontXS;
+            }
+            &__data{
+                width: 100%;
+            }
+        }
+        .slider-lengthy{
+            width: 450px;
+            // position: absolute;
+            // top: 20%;
+            // left: 50%;
+            // transform: translateX(-50%);
+        }
+        .slider-lengthy{
+            top: 20%;
+            .slick-dots{
+                top:70%;
+            }
+        }
+        .title-box{
+                position: absolute;
+                top:40%;
+        }
+    }
+    .forms-grid{
+        grid-template: 
+            "inp1" 1fr
+            "inp2" 1fr
+            "ar" 2fr
+            "but" 1fr !important;
+            gap: 30px;
     }
 }
 
@@ -95,4 +255,44 @@
     .button{
         width: 80%;
     }
+    .service{
+        width: 75%;
+        grid-template: repeat(6, 1fr)/ 1fr !important;
+        &__item{
+            width: 250px !important;
+            height: 255px !important;
+            &-text{
+                font-size: $fontS !important;
+            }
+        }
+    }
+    .title-box{
+        &--services{
+            top: 5%;
+        }
+        &--company{
+            top: 5%;
+        }
+    }
+    .section-grid{
+        grid-template: repeat(4, 1fr)/1fr !important;
+        width: 90%;
+        &__item{
+            margin: auto;
+            width: 310px !important;
+            height: 310px !important;
+        }
+    }
+    .review{
+        padding: 10px 5px !important;
+    }
+    .forms{
+        &-grid{
+            width: 90% !important;
+            .forms__item{
+                width: 90% !important;
+            }
+        }
+    }
+
 }

@@ -1,62 +1,38 @@
-.header{
-    max-width: 1920px;
-    .sup-menu{
-        &__item{
-            margin-left: 2em;
-            .item-text{
-                margin-left: 10px;
-                font-family: $fontMenu;
-                font-weight: $fontNormal;
-                font-size: $fontSupText;
-            }
-        }
-    }
-    .brand{
-        margin-left: 30px;
-        font-family: $fontFamily;
-        font-size: $fontL;
-        font-weight: $fontBolder;
-        color: $colorBlue;
-    }
-    .nav-link--nav{
-        font-family: $fontMenu;
-        text-transform: uppercase;
-        font-size: $fontXS;
-        font-weight: $fontBold;
-        color: $colorDark;
-    }
-
-}
-
-.my-nav {
+.nav {
+    width: 60%;
     &__list {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
-
+        &-item{
+            display: flex;
+            align-items: center;
+            &:hover{
+                background-color: $colorBlue;
+                transition: all 0.3s ease 0s;
+                .nav__link{
+                    color: white;
+                }
+            }
+        }
     }
-}
-.nav__item {
-    margin-left: 2em ;
-    padding: 0.65rem 0;
-    text-decoration: none;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    color: rgb(22, 22, 22);
-    border-radius: 5px;
-    &:hover {
-        background-color: rgb(208, 57, 88);
-        color: rgb(255, 255, 255);
-        transition: all 0.7s ease 0s;
+    &__link{
+        text-decoration: none;
+        font-family: $fontMenu;
+        font-size: $fontXS;
+        font-weight: $fontBold;
+        text-transform: uppercase;
+        color: $colorDark;
     }
+    
 }
-@media screen and (max-width:768px) {
-    .row {
-        align-items: center;
+@media screen and (max-width:800px) {
+    .lock{
+        overflow: hidden;
     }
     .nav {
+        
         margin: 0;
- 
         &__list {
             margin: 0;
             padding: 30px 0;
@@ -66,46 +42,51 @@
             /*задвигаем меню выше видимой части экрана*/
             left: 0;
             width: 100%;
-            height: 90%;
+            height: 100%;
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            background-color: rgba(98, 93, 83, 0.729);
+            justify-content: start !important;
+            align-items: end;
+            // background: url(../images/content/);
+            background-color: rgba(255, 255, 255, 0.6);
             transition: all 0.5s ease 0s;
-
+            &-item{
+                margin: 2em 0px;
+                background-color: $colorBlue;
+                &:hover{
+                    .nav__link{
+                        color: $colorDark;
+                    }
+                }
+            }
+        
             &.active {
                 top: 0;
                 /*выдвигаем меню на видимый экран при активации меню-бургер*/
             }
         }
-        &__item {
+        &__link {
             position: relative;
             z-index: 3;
-            font-size: 1.5rem;
-            padding: 0.65rem 1.5rem;
-            color: white;
-            font-weight: bold;
-
-            &:hover {
-                /*немного красоты для активной кнопки меню*/
-                box-shadow: 0 5px #000;
-                text-shadow: 0 5px #000;
-                transition: all 0.7s ease 0s;
-            }
+            font-size: $fontL;
+            padding: 0 1.5rem;
+            color: $colorLight;
+            font-weight: $fontBold;
         }
         &__burger {
             /*создаем меню-бургер*/
             display: block;
             position: relative;
+            top: 15%;
+            left: 80%;
             width: 40px;
             height: 25px;
             z-index: 11;
-
+        
             &::after,
             &::before {
                 /*создаем горизонтальные линии для меню-бургер*/
                 content: "";
-                background: rgb(22, 22, 22);
+                background: $colorBlue;
                 position: absolute;
                 width: 100%;
                 height: 2px;
@@ -120,9 +101,9 @@
                 top: 0;
             }
             /*создаем среднюю линию бургера*/
-            & .icon-burger {
+            span {
                 position: absolute;
-                background-color: rgb(22, 22, 22);
+                background-color: $colorBlue;
                 left: 0;
                 width: 100%;
                 height: 2px;
@@ -133,12 +114,12 @@
             &.active::before {
                 transform: rotate(45deg);
                 top: 11.5px;
-                background-color: #fff;
+                background-color: $colorBlue;
             }
             &.active::after {
                 transform: rotate(-45deg);
                 bottom: 11.5px;
-                background-color: #fff;
+                background-color: $colorBlue;
             }
             &.active span {
                 transform: scale(0);

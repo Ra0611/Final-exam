@@ -1,4 +1,6 @@
 
+const bootstrap = require('bootstrap')
+
 const serviceItem = [
     document.querySelector('.service__item-1'),
     document.querySelector('.service__item-2'),

@@ -1,6 +1,11 @@
 
 const bootstrap = require('bootstrap')
 
+let $ = require('jquery')
+
+window.jQuery = $
+window.$ = window.jQuery
+
 const serviceItem = [
     document.querySelector('.service__item-1'),
     document.querySelector('.service__item-2'),

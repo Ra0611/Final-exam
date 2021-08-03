@@ -14,9 +14,9 @@
   <!-- Navigatiom -->
   <header class="header">
     <div class="container p-0">
-      <div class="row py-2">
-        <div class="col-12">
-          <div class="sup-menu d-none d-md-flex justify-content-end">
+      <div class="row row-header py-2">
+        <div class="col-12 pl-xl-4">
+          <div class="sup-menu d-none d-lg-flex justify-content-end">
             <div class="sup-menu__item d-flex">
               <a href="tel:+8 (111) 222-33-44"><img src="images/content/icon-phone.svg"></a><span class="item-text">8
                 (111) 222-33-44</span>
@@ -35,7 +35,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 d-flex justify-content-between">
+        <div class="col-12 pl-xl-4 d-flex justify-content-between">
           <div class="logo d-flex">
             <img src="./images/content/logo.svg" alt="logotype">
             <span class="brand">BuhOne</span>
@@ -45,11 +45,11 @@
               <span></span>
             </div>
             <ul class="nav__list w-100 d-flex justify-content-between">
-              <li class="nav__list-item px-2"><a href="#" class="nav__link ">главная</a></li>
-              <li class="nav__list-item px-2"><a href="#services" class="nav__link">услуги</a></li>
-              <li class="nav__list-item px-2"><a href="#clients" class="nav__link">кейсы</a></li>
-              <li class="nav__list-item px-2"><a href="#company" class="nav__link">о компании</a></li>
-              <li class="nav__list-item px-2"><a href="#contacts" class="nav__link">контакты</a></li>
+              <li class="nav__list-item px-1 px-xl-2"><a href="#" class="nav__link ">главная</a></li>
+              <li class="nav__list-item px-1 px-xl-2"><a href="#services" class="nav__link">услуги</a></li>
+              <li class="nav__list-item px-1 px-xl-2"><a href="#clients" class="nav__link">кейсы</a></li>
+              <li class="nav__list-item px-1 px-xl-2"><a href="#company" class="nav__link">о компании</a></li>
+              <li class="nav__list-item px-1 px-xl-2"><a href="#contacts" class="nav__link">контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -73,7 +73,7 @@
           <div class="slider__item--shadow"></div>
         </div>
       </div>
-      <div class="title-box title-box--mod d-flex flex-column justify-content-between">
+      <div class="title-box title-box--mod d-flex flex-column shift-center justify-content-between">
         <h3 class="title text-light lh-base">Бухгалтерские услуги в Mариуполе</h3>
         <button type="button" class="btn button">Наша презентация</button>
       </div>
@@ -131,7 +131,7 @@
               <span class="suptitle mb-xl-4 text-center text-xl-start">О нас</span>
               <h3 class="title text-center text-xl-start">Компания <br><span class="title--mod">ИвановПром</span></h3>
             </div>
-            <div class="section__text px-0">
+            <div class="section__text pt-3 pt-lg-2 px-0">
               <p class="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
                 является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
                 печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
@@ -167,24 +167,48 @@
 
     <!-- Our clients -->
     <section class="section section-clients" id="clients">
-      <div class="section-clients__wrapper position-relative">
-        <div class="slider slider-group">
-          <div class="slider__item d-flex align-items-center"><img src="images/content/clients/MSoft.png"
-              alt="photo city"></div>
-          <div class="slider__item d-flex align-items-center"><img src="images/content/clients/apple.jpg"
-              alt="photo city"></div>
-          <div class="slider__item d-flex align-items-center"><img src="images/content/clients/google.jpg"
-              alt="photo city"></div>
-          <div class="slider__item d-flex align-items-center"><img src="images/content/clients/tesla.jpg"
-              alt="photo city"></div>
-          <div class="slider__item d-flex align-items-center"><img src="images/content/clients/apple.jpg"
-              alt="photo city"></div>
-          <div class="slider__item d-flex align-items-center"><img src="images/content/clients/tesla.jpg"
-              alt="photo city"></div>
+      <div class="section-clients__wrapper">
+        <div class="slider slider-lengthy slider-lengthy--mod" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+
+          <div class="slider__item">
+            <div class="slide-group d-flex flex-row align-items-center">
+              <img class="img-logo" src="images/content/clients/MSoft.png" alt="logo">
+              <img class="img-logo d-none d-md-block" src="images/content/clients/apple.jpg" alt="logo">
+              <img class="img-logo d-none d-lg-block" src="images/content/clients/google.jpg" alt="logo">
+              <img class="img-logo d-none d-xxl-block" src="images/content/clients/tesla.jpg" alt="logo">
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="slide-group d-flex flex-row align-items-center">
+              <img class="img-logo d-none d-xxl-block" src="images/content/clients/MSoft.png" alt="logo">
+              <img class="img-logo d-none d-lg-block" src="images/content/clients/apple.jpg" alt="logo">
+              <img class="img-logo" src="images/content/clients/google.jpg" alt="logo">
+              <img class="img-logo d-none d-md-block" src="images/content/clients/tesla.jpg" alt="logo">
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="slide-group d-flex flex-row align-items-center">
+              <img class="img-logo d-none d-md-block" src="images/content/clients/MSoft.png" alt="logo">
+              <img class="img-logo d-none d-lg-block" src="images/content/clients/apple.jpg" alt="logo">
+              <img class="img-logo d-none d-xxl-block" src="images/content/clients/google.jpg" alt="logo">
+              <img class="img-logo" src="images/content/clients/tesla.jpg" alt="logo">
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="slide-group d-flex flex-row align-items-center">
+              <img class="img-logo d-none d-lg-block" src="images/content/clients/MSoft.png" alt="logo">
+              <img class="img-logo" src="images/content/clients/apple.jpg" alt="logo">
+              <img class="img-logo d-none d-xxl-block" src="images/content/clients/google.jpg" alt="logo">
+              <img class="img-logo d-none d-md-block" src="images/content/clients/tesla.jpg" alt="logo">
+            </div>
+          </div>
         </div>
         <div class="title-box title-box--mod title-box--mod-shift d-flex flex-column ">
-          <span class="suptitle mb-4 text-center text-xl-start">Наши клиенты</span>
-          <h3 class="title">С нами работают</h3>
+          <span class="suptitle mb-4 text-center text-xxl-start">Наши клиенты</span>
+          <h3 class="title text-center text-xxl-start">С нами работают</h3>
         </div>
       </div>
     </section>
@@ -268,7 +292,8 @@
     <section class="section section-connection" id="contacts">
       <div class="container">
         <div class="row flex-column flex-xxl-row">
-          <div class="col-12 px-3 col-xxl-5 offset-xxl-0 d-flex flex-column justify-content-start px-xxl-0 py-5">
+          <div
+            class="col-10 px-3 offset-1 px-3 col-xxl-5 offset-xxl-0 d-flex flex-column justify-content-start px-xxl-0 py-5">
             <div class=" d-flex flex-column align-items-center align-items-xxl-start title-box--form">
               <h3 class="title text-center text-light mb-4">Связь с нами</h3>
               <span class="subtitle my-4 text-light">У вас остались вопросы? Напишите нам - мы ответим в ближайшее
@@ -284,7 +309,7 @@
                   class="item-text mx-2">order@buhone.ru</span></span>
             </div>
           </div>
-          <div class="col-12 px-3 col-xxl-6 offset-xxl-1 px-xxl-0 py-5">
+          <div class="col-10 px-3 offset-1 px-3 col-xxl-6 offset-xxl-1 px-xxl-0 py-5">
             <form action="#" class="forms d-flex flex-wrap justify-content-center justify-content-sm-end" id="form">
               <div class="forms-grid">
                 <div class="forms__item inp1 d-flex flex-column">

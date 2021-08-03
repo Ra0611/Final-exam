@@ -27,6 +27,9 @@
 }
 
 @media screen and (max-width: 1400px){
+    .row-header{
+        width: 90%;
+    }
     .title-box{
         &--mod-shift{
             top: 7%;
@@ -40,28 +43,35 @@
     .button{
         padding: 10px;
     }
-    .slider-group{
+    .slider-lengthy{
         .slick-prev{
-            right: 10%;
+            right: 15%;
         }
         .slick-next{
-            right: 10%;
+            right: 15%;
         }
+        .slick-dots{
+            left: 15%;
+        }
+    }
+    .img-logo{
+        margin-left: 60px !important;
     }
 }
 
 @media screen and (max-width: 1200px){
-
+    .row-header{
+        margin: auto;
+        width: 85%;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    .brand{
+        font-size: $fontM;
+    }
     .button{
         padding: 5px;
-    }
-    .slider-group{
-        .slick-prev{
-            right: 25%;
-        }
-        .slick-next{
-            right: 25%;
-        }
     }
     .slider-lengthy{
         width: 850px;
@@ -89,7 +99,10 @@
 }
 
 @media screen and (max-width: 992px){
-
+    .brand{
+        margin-left: 15px !important;
+        font-size: $fontS;
+    }
     .title-box{
         top: 50%;
         left: 50%;
@@ -112,6 +125,9 @@
             position: absolute;
             top: 7%;
         }
+    }
+    .shift-center{
+        transform: translate(-50%, 0);
     }
     .slider{
         .slick-arrow{
@@ -159,16 +175,6 @@
             top: 10%;
         }
     }
-    // .section-reviews{
-    //     .title-box{
-    //         .title{
-    //             font-size: $fontL !important;
-    //         }
-    //         .suptitle{
-    //             font-size: $fontM;
-    //         }
-    //     }
-    // }
     .service{
         width: 60%;
         &__item{
@@ -189,6 +195,105 @@
 }
 
 @media screen and (max-width: 768px){
+    .lock{
+        overflow: hidden;
+    }
+    .nav {
+        
+        margin: 0;
+        &__list {
+            margin: 0;
+            padding: 30px 0 30px 50px;
+            position: fixed;
+            z-index: 10;
+            top: -130%;
+            /*задвигаем меню выше видимой части экрана*/
+            left: 0;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: start !important;
+            align-items: end;
+            // background: url(../images/content/);
+            background-color: rgba(255, 255, 255, 0.6);
+            transition: all 0.5s ease 0s;
+            &-item{
+                margin: 2em 0px;
+                background-color: $colorBlue;
+                &:hover{
+                    .nav__link{
+                        color: $colorDark;
+                    }
+                }
+            }
+        
+            &.active {
+                top: 0;
+                /*выдвигаем меню на видимый экран при активации меню-бургер*/
+            }
+        }
+        &__link {
+            position: relative;
+            z-index: 3;
+            font-size: $fontL;
+            padding: 0 1.5rem;
+            color: $colorLight;
+            font-weight: $fontBold;
+        }
+        &__burger {
+            /*создаем меню-бургер*/
+            display: block;
+            position: relative;
+            top: 15%;
+            left: 70%;
+            width: 40px;
+            height: 25px;
+            z-index: 11;
+        
+            &::after,
+            &::before {
+                /*создаем горизонтальные линии для меню-бургер*/
+                content: "";
+                background: $colorBlue;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                transition: all 0.3s ease 0s;
+            }
+            /*раздвигаем две линии вверх и вниз по блоку бургера*/
+            &::after {
+                bottom: 0;
+            }
+            &::before {
+                top: 0;
+            }
+            /*создаем среднюю линию бургера*/
+            span {
+                position: absolute;
+                background-color: $colorBlue;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                top: 12px;
+                transition: all 0.3s ease 0s;
+            }
+            /*делаем крест при активированном меню-бургер*/
+            &.active::before {
+                transform: rotate(45deg);
+                top: 11.5px;
+                background-color: $colorBlue;
+            }
+            &.active::after {
+                transform: rotate(-45deg);
+                bottom: 11.5px;
+                background-color: $colorBlue;
+            }
+            &.active span {
+                transform: scale(0);
+            }
+        }
+    }
 
     .button{
         width: 60%;
@@ -198,17 +303,6 @@
         &__item{
             width: 200px !important;
             height: 200px !important;
-        }
-    }
-    .slider-group{
-        width: 100%;
-        .slider__item{
-            width: 600px;
-        }
-        .slick-list{
-            width: 100%;
-            
-            overflow: hidden;
         }
     }
     .section-reviews{
@@ -246,6 +340,9 @@
             "ar" 2fr
             "but" 1fr !important;
             gap: 30px;
+    }
+    .slider-lengthy--mod{
+        width: 90%;
     }
 }
 
@@ -294,5 +391,7 @@
             }
         }
     }
-
+    .section-clients__wrapper{
+        height: 500px;
+    }
 }

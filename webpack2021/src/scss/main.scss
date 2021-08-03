@@ -97,9 +97,14 @@
 }
 .section-clients{
     position: relative;
+    background-color: $colorLightGray;
     &__wrapper{
-        padding: 100px 0px;
-        background-color: rgba(235, 235, 235, 1);
+        // padding: 100px 0px;
+        margin-bottom: 100px;
+        height: 700px;
+    }
+    .img-logo{
+        margin-left: 30px;
     }
 }
 .section-reviews{
@@ -136,7 +141,7 @@
     }
 }
 .section-connection{
-    max-width: 1920px;
+    max-width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../images/content/bacgrounds/city6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
